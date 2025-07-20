@@ -4,18 +4,18 @@ function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-12 max-w-7xl mx-auto">
+      <section className="flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-12 max-w-7xl mx-auto pt-24">
         <div className="max-w-xl text-center lg:text-left py-6 lg:py-0">
-          <h1 className="text-4xl font-bold text-teal-700 mb-4">
+          <h1 className="text-4xl font-bold text-red-500 mb-4">
             Get Ready. Get Hired.
           </h1>
           <p className="text-gray-600 text-lg mb-6">
             Unlock your potential: Prep, Practice and Succeed!
           </p>
-          <button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-2 rounded-lg shadow-md">
+          <button className="bg-red-500 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md">
             Enroll Now
           </button>
-          <p className="text-sm text-gray-500 mt-3">
+          <p className="text-sm text-gray-600 mt-3">
             Next start date – August 1st, 2025
           </p>
         </div>
@@ -32,8 +32,8 @@ function Home() {
       </section>
 
       {/* Program Section */}
-      <section className="py-16 px-6 bg-gray-50 text-center">
-        <h2 className="text-3xl font-bold text-teal-700 mb-4">
+      <section className="py-16 px-6 text-center">
+        <h2 className="text-3xl font-bold text-red-500 mb-4">
           Program Overview
         </h2>
         <p className="text-gray-600 max-w-3xl mx-auto mb-12">
@@ -49,7 +49,7 @@ function Home() {
           <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
             {/* self assessment and personal branding grid */}
             <div className="flex items-start gap-4">
-              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+              <div className="bg-red-500 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
                 🌱
               </div>
               <div>
@@ -58,13 +58,13 @@ function Home() {
                 </h1>
               </div>
             </div>
-            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+            <ChevronDown className="text-red-500 mt-1 transition-transform duration-300"></ChevronDown>
           </div>
 
           {/* Compensation and negotiation */}
           <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
             <div className="flex items-start gap-4">
-              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+              <div className="bg-red-500 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
                 💲
               </div>
               <div>
@@ -73,14 +73,14 @@ function Home() {
                 </h1>
               </div>
             </div>
-            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+            <ChevronDown className="text-red-500 mt-1 transition-transform duration-300"></ChevronDown>
           </div>
 
           {/* Profile optimization */}
 
           <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
             <div className="flex items-start gap-4">
-              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+              <div className="bg-red-500 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
                 👤
               </div>
               <div>
@@ -89,13 +89,13 @@ function Home() {
                 </h1>
               </div>
             </div>
-            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+            <ChevronDown className="text-red-500 mt-1 transition-transform duration-300"></ChevronDown>
           </div>
 
           {/* AI-Powered Mock Interviews    */}
           <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
             <div className="flex items-start gap-4">
-              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+              <div className="bg-red-500 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
                 🎤
               </div>
               <div>
@@ -104,13 +104,13 @@ function Home() {
                 </h1>
               </div>
             </div>
-            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+            <ChevronDown className="text-red-500 mt-1 transition-transform duration-300"></ChevronDown>
           </div>
 
           {/* Impactful Resume */}
           <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
             <div className="flex items-start gap-4">
-              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+              <div className="bg-red-500 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
                 📄
               </div>
               <div>
@@ -119,14 +119,14 @@ function Home() {
                 </h1>
               </div>
             </div>
-            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+            <ChevronDown className="text-red-500 mt-1 transition-transform duration-300"></ChevronDown>
           </div>
 
           {/* Empowered Mindset */}
 
           <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
             <div className="flex items-start gap-4">
-              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+              <div className="bg-red-500 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
                 🧠
               </div>
               <div>
@@ -135,7 +135,7 @@ function Home() {
                 </h1>
               </div>
             </div>
-            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+            <ChevronDown className="text-red-500 mt-1 transition-transform duration-300"></ChevronDown>
           </div>
         </div>
       </section>
@@ -153,7 +153,7 @@ function Home() {
           {/* How it works*/}
           <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
             <div className="flex items-start gap-4">
-              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+              <div className="bg-red-500 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
                 ⚙️
               </div>
               <div>
@@ -162,13 +162,13 @@ function Home() {
                 </h1>
               </div>
             </div>
-            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+            <ChevronDown className="text-red-500 mt-1 transition-transform duration-300"></ChevronDown>
           </div>
 
           {/* Time Commitment*/}
           <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
             <div className="flex items-start gap-4">
-              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+              <div className="bg-red-500 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
                 ⏱️
               </div>
               <div>
@@ -177,13 +177,13 @@ function Home() {
                 </h1>
               </div>
             </div>
-            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+            <ChevronDown className="text-red-500 mt-1 transition-transform duration-300"></ChevronDown>
           </div>
 
           {/* Weekly Breakdown*/}
           <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
             <div className="flex items-start gap-4">
-              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+              <div className="bg-red-500 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
                 🗓️
               </div>
               <div>
@@ -192,7 +192,7 @@ function Home() {
                 </h1>
               </div>
             </div>
-            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+            <ChevronDown className="text-red-500 mt-1 transition-transform duration-300"></ChevronDown>
           </div>
         </div>
       </section>
