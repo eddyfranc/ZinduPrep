@@ -1,6 +1,6 @@
-# 🐙 ZinduaPrep – Get Ready. Get Hired.
+# 🐙 ZinduPrep – Get Ready. Get Hired.
 
-**ZinduaPrep** is a platform program designed to assist recent graduates and Junior Software developers and engineers with the essentails skills  and mindset needed to successfully naviagate the job market. The platform offers a 4 weeks structured program, interactive content, mentorship opportunities, peer learning opportunities.
+**ZinduPrep** is a platform program designed to assist recent graduates and Junior Software developers and engineers with the essentails skills  and mindset needed to successfully naviagate the job market. The platform offers a 4 weeks structured program, interactive content, mentorship opportunities, peer learning opportunities.
 
 > “Prep, Practice, and Succeed with a program built to support you at every step.”
 
