@@ -1,65 +1,11 @@
-import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 function Home() {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const modules = [
-    {
-      title: "Self-Assessment & Personal Branding",
-      icon: "🌱",
-    },
-    {
-      title: "Compensation & Negotiation",
-      icon: "💲",
-    },
-    {
-      title: "Profile Optimization",
-      icon: "👤",
-    },
-    {
-      title: "AI-Powered Mock Interviews",
-      icon: "🎤",
-    },
-    {
-      title: "Impactful Resume",
-      icon: "📄",
-    },
-    {
-      title: "Empowered Mindset",
-      icon: "🧠",
-    },
-    {
-    title: "How It Works",
-    icon: "⚙️",
-  },
-  {
-    title: "Time Commitment",
-    icon: "⏱️",
-  },
-  {
-    title: "Weekly Breakdown",
-    icon: "🗓️",
-  },
-  {
-    title: "Company Research",
-    icon: "🏢",
-  },
-  {
-    title: "Networking",
-    icon: "🤝",
-  },
-  ];
-
-  const toggle = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
     <>
       {/* Hero Section */}
       <section className="flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-12 max-w-7xl mx-auto">
-        <div className="max-w-xl text-center lg:text-left">
+        <div className="max-w-xl text-center lg:text-left py-6 lg:py-0">
           <h1 className="text-4xl font-bold text-teal-700 mb-4">
             Get Ready. Get Hired.
           </h1>
@@ -77,7 +23,7 @@ function Home() {
         <div className="w-full lg:w-auto mb-10 lg:mb-0 flex justify-center">
           <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg">
             <img
-              src="public/profileiamge.png"
+              src="/Images/profileiamge.png"
               alt="Celebrating students"
               className="object-cover w-full h-full"
             />
@@ -85,7 +31,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Program Overview Section */}
+      {/* Program Section */}
       <section className="py-16 px-6 bg-gray-50 text-center">
         <h2 className="text-3xl font-bold text-teal-700 mb-4">
           Program Overview
@@ -100,53 +46,157 @@ function Home() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-          {modules.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg"
-              onClick={() => toggle(index)}
-            >
-              <div className="flex items-start gap-4">
-                <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
-                  {item.icon}
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900">
-                  {item.title}
-                </h3>
+          <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
+            {/* self assessment and personal branding grid */}
+            <div className="flex items-start gap-4">
+              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+                🌱
               </div>
-              <ChevronDown
-                className={`text-teal-600 mt-1 transition-transform duration-300 ${
-                  openIndex === index ? "rotate-180" : ""
-                }`}
-              />
+              <div>
+                <h1 className="text-lg font-semibold text-gray-900">
+                  Self-Assessment & Personal Branding
+                </h1>
+              </div>
             </div>
-          ))}
+            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+          </div>
+
+          {/* Compensation and negotiation */}
+          <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
+            <div className="flex items-start gap-4">
+              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+                💲
+              </div>
+              <div>
+                <h1 className="text-lg font-semibold text-gray-900">
+                  Compensation & Negotiation
+                </h1>
+              </div>
+            </div>
+            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+          </div>
+
+          {/* Profile optimization */}
+
+          <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
+            <div className="flex items-start gap-4">
+              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+                👤
+              </div>
+              <div>
+                <h1 className="text-lg font-semibold text-gray-900">
+                  Profile Optimization
+                </h1>
+              </div>
+            </div>
+            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+          </div>
+
+          {/* AI-Powered Mock Interviews    */}
+          <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
+            <div className="flex items-start gap-4">
+              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+                🎤
+              </div>
+              <div>
+                <h1 className="text-lg font-semibold text-gray-900">
+                  AI-Powered Mock Interviews
+                </h1>
+              </div>
+            </div>
+            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+          </div>
+
+          {/* Impactful Resume */}
+          <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
+            <div className="flex items-start gap-4">
+              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+                📄
+              </div>
+              <div>
+                <h1 className="text-lg font-semibold text-gray-900">
+                  Impactful Resume
+                </h1>
+              </div>
+            </div>
+            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+          </div>
+
+          {/* Empowered Mindset */}
+
+          <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
+            <div className="flex items-start gap-4">
+              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+                🧠
+              </div>
+              <div>
+                <h1 className="text-lg font-semibold text-gray-900">
+                  Empowered Mindset
+                </h1>
+              </div>
+            </div>
+            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+          </div>
         </div>
       </section>
 
-      <section>
-        <div className="flex flex-row items-center gap-8">
-        <div>
-          <img
-            src="public/Images/unnamed.jpg"
-            className="rounded sm shadow-md w-64 h-64"
-            alt="Image"
-          />
-        </div>
-        {/* <div className="bg-white flex flex-col items-center p-2 rounded-sm shadow relative transition-all duration-300 ease-in-out">
-            fefs sdvxwesdhzxbnvc esjhnmfcekjfmnjehfbkjembf jevhnsbd fjcnv jesfdbvc j
-        </div> */}
-        <div>
-            <button className="bg-white items-center p-2 rounded sm transition-all duration-300 ease-in-out ">How it works</button>
-        </div>
-       
-        
+      <section className="flex flex-col items-center">
+        <div className="gap-4">
+          <div>
+            <img
+              src="public/Images/unnamed.jpg"
+              className="rounded sm shadow-md w-64 h-64"
+              alt="Image"
+            />
+          </div>
+
+          {/* How it works*/}
+          <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
+            <div className="flex items-start gap-4">
+              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+                ⚙️
+              </div>
+              <div>
+                <h1 className="text-lg font-semibold text-gray-900">
+                  How it Works
+                </h1>
+              </div>
+            </div>
+            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+          </div>
+
+          {/* Time Commitment*/}
+          <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
+            <div className="flex items-start gap-4">
+              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+                ⏱️
+              </div>
+              <div>
+                <h1 className="text-lg font-semibold text-gray-900">
+                  Time Commitment
+                </h1>
+              </div>
+            </div>
+            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+          </div>
+
+          {/* Weekly Breakdown*/}
+          <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
+            <div className="flex items-start gap-4">
+              <div className="bg-teal-600 text-white text-xl w-10 h-10 flex items-center justify-center rounded-full">
+                🗓️
+              </div>
+              <div>
+                <h1 className="text-lg font-semibold text-gray-900">
+                  Weekly Breakdown
+                </h1>
+              </div>
+            </div>
+            <ChevronDown className="text-teal-600 mt-1 transition-transform duration-300"></ChevronDown>
+          </div>
         </div>
       </section>
-
-</>
-
-     
+    </>
   );
 }
 export default Home;
