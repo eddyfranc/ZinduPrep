@@ -44,7 +44,7 @@ To get a local copy up and running follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/eddyfranc/ZinduaPrep
+git clone https://github.com/eddyfranc/ZinduaPrep.git
 
 # Navigate into the directory
 cd ZinduaPrep
