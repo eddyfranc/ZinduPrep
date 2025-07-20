@@ -140,9 +140,10 @@ function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center">
-        <div className="gap-4">
-          <div>
+      <section>
+        {/* className="flex flex-col items-center" */}
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+          <div className="justify-center md:justify-start">
             <img
               src="public/Images/unnamed.jpg"
               className="rounded sm shadow-md w-64 h-64"
@@ -150,6 +151,7 @@ function Home() {
             />
           </div>
 
+          <div className="w-full md:w-1/2 flex flex-col gap-3 lg:gap-4">
           {/* How it works*/}
           <div className=" bg-white rounded-xl p-6 shadow-md text-left flex items-start justify-between cursor-pointer transition hover:shadow-lg">
             <div className="flex items-start gap-4">
@@ -194,6 +196,7 @@ function Home() {
             </div>
             <ChevronDown className="text-red-500 mt-1 transition-transform duration-300"></ChevronDown>
           </div>
+        </div>
         </div>
       </section>
     </>
