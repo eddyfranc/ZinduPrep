@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-white border-b border-solid border-black-900 z-50 px-6 py-4 flex items-center justify-between">
       <div className="flex items-center space-x-2">
-        <h1 className="text-red-500 text-xl font-bold">ZinduaPrep</h1>
+        <h1 className="text-red-500 text-xl font-bold">ZinduPrep</h1>
       </div>
 
 <div className="flex items-center space-x-6">
