@@ -9,7 +9,7 @@ const Navbar = () => {
 
 <div className="flex items-center space-x-6">
       <div className="hidden md:flex space-x-6 text-gray-700 font-medium">
-        <a href="#program" className="hover:text-red-500">Program</a>
+        <a href="" className="hover:text-red-500">Program</a>
         <a href="#pricing" className="hover:text-red-500">Pricing</a>
         <a href="#about" className="hover:text-red-500">About</a>
         <a href="#faq" className="hover:text-red-500">FAQ</a>
